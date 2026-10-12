@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shivam Jaiswal — Data Governance & AI Readiness specialist. 7+ years making enterprise data trustworthy, discoverable, and ready for AI/ML and analytics across Snowflake, DataHub, and dbt." />
+  <meta name="author" content="Shivam Jaiswal" />
+  <meta name="keywords" content="Data Governance, AI Data Readiness, Metadata Management, Data Quality, AI Governance, Snowflake, DataHub, dbt, Streamlit, Python, SQL, Analytics" />
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Shivam Jaiswal — Data Governance & AI Readiness" />
+  <meta property="og:description" content="7+ years making enterprise data trustworthy, discoverable, and ready for AI/ML and analytics." />
+  <title>Shivam Jaiswal — Data Governance & AI Readiness</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#hero" class="nav__brand">SJ</a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#casestudy">Project</a>
+        <a href="#skills">Skills</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav__actions">
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode" title="Toggle theme">
+          <span class="theme-icon">🌙</span>
+        </button>
+        <button id="menuToggle" class="icon-btn menu-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Scroll progress bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <!-- Animated background blobs -->
+    <div class="hero__bg" aria-hidden="true">
+      <span class="blob blob--1"></span>
+      <span class="blob blob--2"></span>
+      <span class="blob blob--3"></span>
+    </div>
+
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <p class="hero__eyebrow">Data Governance • AI Readiness • Metadata &amp; Analytics</p>
+        <h1 class="hero__title">Shivam Jaiswal</h1>
+        <p class="hero__tagline">Governing <strong>5,600+ data objects</strong> to 95%+ tag coverage across enterprise data at Wood Mackenzie</p>
+        <h2 class="hero__subtitle">
+          <span class="hero__static">I turn data into</span>
+          <span class="typed" id="typed" aria-live="polite"></span>
+        </h2>
+        <p class="hero__pitch">
+          I make enterprise data <strong>trustworthy, discoverable, and AI-ready</strong>. For 7+ years
+          I've built governance frameworks, metadata standards, and tagging strategies that turn messy
+          data estates into the clean, well-documented foundation that modern AI, ML, and analytics
+          depend on — working hand in hand with engineering, product, and platform teams.
+        </p>
+
+        <!-- Impact-at-a-glance strip: the first proof a recruiter sees. Edit numbers/labels freely. -->
+        <ul class="hero__impact" aria-label="Impact at a glance">
+          <li><strong>95%+</strong> tag coverage</li>
+          <li><strong>5,600+</strong> objects governed</li>
+          <li><strong>118</strong> schemas</li>
+          <li><strong>7+ yrs</strong> in enterprise data</li>
+        </ul>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#contact">Get in touch</a>
+          <a class="btn btn--ghost" href="assets/Shivam-Jaiswal-Resume.pdf" download>↓ Download résumé</a>
+        </div>
+        <div class="hero__links">
+          <a href="mailto:shivam.jaiswal334@gmail.com" aria-label="Email">✉ shivam.jaiswal334@gmail.com</a>
+          <a href="https://www.linkedin.com/in/shivam-j-78a992192/" target="_blank" rel="noopener" aria-label="LinkedIn">in LinkedIn</a>
+          <a href="tel:+918851780751" aria-label="Phone">☎ +91 88517 80751</a>
+        </div>
+      </div>
+
+      <div class="hero__photo">
+        <div class="photo-ring">
+          <!--
+            To use YOUR OWN photo: drop a file named "profile.jpg" (or .png) into the
+            assets/ folder. It will load automatically. If no photo is found, the
+            illustrated avatar below is shown instead.
+          -->
+          <img
+            id="profileImg"
+            class="profile-img"
+            src="assets/profile.jpg"
+            data-fallback="assets/avatar.svg"
+            alt="Shivam Jaiswal"
+            width="300" height="300"
+            loading="eager" />
+        </div>
+        <span class="photo-badge">Open to work</span>
+      </div>
+    </div>
+
+    <a class="scroll-hint" href="#about" aria-label="Scroll to about">
+      <span></span>
+    </a>
+  </section>
+
+  <main>
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">01</span> About</h2>
+        <div class="about">
+          <p>
+            I'm a data governance specialist with <strong>7+ years of experience</strong> turning
+            complex enterprise data estates into assets that teams — and increasingly, AI systems —
+            can actually trust. My focus is <strong>AI data readiness</strong>: the metadata, data
+            quality, ownership, and documentation that determine whether an LLM, ML model, or
+            analytics product produces reliable results or garbage.
+          </p>
+          <p>
+            Good AI starts with good data. I build the governance frameworks, tagging strategies,
+            and metadata standards that make data discoverable and well-governed enough to feed
+            RAG pipelines, model training, and self-service analytics with confidence. I work
+            hands-on across <strong>Snowflake, DataHub, dbt, and Streamlit</strong>, and partner
+            closely with engineering, product, and platform teams to ship governance at scale.
+          </p>
+          <div class="about__stats">
+            <div class="stat"><span class="stat__num">7+</span><span class="stat__label">Years in data</span></div>
+            <div class="stat"><span class="stat__num">95%+</span><span class="stat__label">Tag coverage</span></div>
+            <div class="stat"><span class="stat__num">5,600+</span><span class="stat__label">Objects governed</span></div>
+            <div class="stat"><span class="stat__num">20%</span><span class="stat__label">Fewer process delays</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section section--alt" id="experience">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">02</span> Experience</h2>
+        <div class="timeline">
+
+          <article class="tl-item">
+            <div class="tl-head">
+              <h3>Senior Data Analyst — Data Governance &amp; AI Readiness</h3>
+              <span class="tl-company">Wood Mackenzie · Gurgaon</span>
+              <span class="tl-date">Dec 2025 – Present</span>
+            </div>
+            <ul>
+              <li>Led the design of an enterprise tag governance framework across Snowflake and DataHub — governing <strong>5,600+ data objects</strong> across <strong>118 schemas</strong> to make data discoverable and <strong>trustworthy enough for AI and analytics use cases</strong>.</li>
+              <li>Defined governance processes for tag creation, ownership, approval, and lifecycle management, giving every data asset the clear context AI/ML and self-service consumers need to use it safely.</li>
+              <li>Built a <strong>Streamlit governance dashboard</strong> in Snowflake delivering real-time tagging-compliance insights, driving domain-tag coverage to <strong>95%+</strong> across the estate and <strong>107 of 118 schemas fully tagged</strong>.</li>
+              <li>Embedded governance controls into <strong>dbt deployment pipelines and Infrastructure-as-Code</strong> workflows, so data quality and documentation standards are enforced automatically rather than retrofitted.</li>
+              <li>Investigated <strong>DataHub APIs</strong> to assess metadata availability and automation potential — scoping how programmatic metadata can feed catalogs, lineage, and future AI-powered governance tooling.</li>
+            </ul>
+          </article>
+
+          <article class="tl-item">
+            <div class="tl-head">
+              <h3>Data Analyst</h3>
+              <span class="tl-company">Wood Mackenzie · Gurgaon</span>
+              <span class="tl-date">Feb 2021 – Nov 2025</span>
+            </div>
+            <ul>
+              <li>Supported upstream oil &amp; gas financial and operational reporting by validating and analysing data used in regulatory filings (10-K and 10-Q).</li>
+              <li>Maintained and analysed an upstream M&amp;A database using Factiva and industry sources, providing market intelligence for research teams and executive reporting.</li>
+              <li>Redesigned the RACI framework for four cross-functional teams, clarifying ownership and <strong>reducing process delays by 20%</strong>.</li>
+              <li>Acted as a JIRA expert — managing project boards, tracking tasks, and collaborating on data requests and delivery timelines.</li>
+              <li>Automated Excel-based reporting and consolidation, saving <strong>20+ hours per month</strong> of manual effort.</li>
+            </ul>
+          </article>
+
+          <article class="tl-item">
+            <div class="tl-head">
+              <h3>Data Analyst</h3>
+              <span class="tl-company">UNIKO Industries · New Delhi</span>
+              <span class="tl-date">Oct 2018 – Nov 2020</span>
+            </div>
+            <ul>
+              <li>Developed and published interactive Power BI dashboards for real-time monitoring of sales performance and key business KPIs.</li>
+              <li>Wrote reusable SQL queries to automate reporting and improve data accessibility, reducing manual effort for recurring reports.</li>
+              <li>Managed timely delivery of data, reports, and products for <strong>10+ recurring clients</strong>, ensuring service quality and clear communication.</li>
+              <li>Partnered with sales and operations teams to support decisions through data analysis and client-specific insights.</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Signature Project / Case Study -->
+    <section class="section" id="casestudy">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">03</span> Signature Project</h2>
+
+        <div class="case">
+          <div class="case__body">
+            <span class="case__kicker">Enterprise Data Governance · Snowflake &amp; DataHub</span>
+            <h3 class="case__title">Enterprise Tag Governance Framework &amp; Compliance Dashboard</h3>
+
+            <div class="case__block">
+              <h4>The problem</h4>
+              <p>
+                Data assets across a <strong>5,600+ object</strong> Snowflake estate were
+                inconsistently classified and documented, making data hard to discover, govern,
+                and trust — a blocker for reliable analytics and AI use cases. There was no single,
+                real-time view of tagging compliance across the estate's 118 schemas.
+              </p>
+            </div>
+
+            <div class="case__block">
+              <h4>What I did</h4>
+              <ul>
+                <li>Designed an enterprise tag governance framework defining ownership, approval workflows, lifecycle, and documentation standards across Snowflake and DataHub.</li>
+                <li>Built a <strong>Streamlit compliance dashboard</strong> in Snowflake surfacing tag coverage, tagged/missing counts, and schema-level gaps in real time — with executive-summary and drill-down views.</li>
+                <li>Embedded governance checks into <strong>dbt pipelines and Infrastructure-as-Code</strong> so standards are enforced automatically at deploy time.</li>
+              </ul>
+            </div>
+
+            <div class="case__block">
+              <h4>The result</h4>
+              <ul class="case__results">
+                <li><span class="case__metric">95%+</span> domain-tag coverage across the estate</li>
+                <li><span class="case__metric">107/118</span> schemas fully tagged</li>
+                <li><span class="case__metric">5,354</span> objects tagged, with gaps made visible and actionable</li>
+              </ul>
+            </div>
+
+            <div class="case__scale">
+              <span><strong>5,600+</strong> data objects governed</span>
+              <span><strong>118</strong> schemas / domains</span>
+              <span><strong>Real-time</strong> compliance monitoring</span>
+            </div>
+
+            <div class="case__links">
+              <!--
+                OPTIONAL proof links. Uncomment and set the URLs to show buttons.
+                A GitHub repo, a public write-up, or a demo makes this far more credible.
+              -->
+              <!--
+              <a class="btn btn--ghost" href="PASTE_GITHUB_OR_WRITEUP_URL" target="_blank" rel="noopener">View on GitHub ↗</a>
+              -->
+            </div>
+          </div>
+
+          <figure class="case__media">
+            <!--
+              PRIVACY NOTE: the real dashboard shows internal company data (database/schema names),
+              so it is intentionally NOT published here. Instead we show a safe metrics snapshot
+              built from aggregate numbers only. See EDITING-GUIDE.md section "Signature Project
+              screenshot" for how to turn a screenshot ON (not recommended for internal dashboards)
+              or keep it OFF.
+            -->
+            <div class="metric-card" role="img" aria-label="Governance dashboard metrics snapshot">
+              <div class="metric-card__head">
+                <span class="metric-card__dot"></span>
+                <span>Data Governance · Tag Coverage</span>
+              </div>
+              <div class="metric-card__big"><strong>95%+</strong><span>domain-tag coverage</span></div>
+              <div class="metric-card__grid">
+                <div><strong>5,600+</strong><span>Objects</span></div>
+                <div><strong>5,354</strong><span>Tagged</span></div>
+                <div><strong>118</strong><span>Schemas</span></div>
+                <div><strong>107</strong><span>Fully tagged</span></div>
+              </div>
+              <div class="metric-card__bar"><span style="width:95%"></span></div>
+            </div>
+            <figcaption>A privacy-safe snapshot of the Streamlit governance dashboard I built on Snowflake (live demo available on request).</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">04</span> Skills</h2>
+        <div class="skills">
+          <div class="skill-group">
+            <h3>AI &amp; Modern Data Stack</h3>
+            <ul class="chips">
+              <li>AI Data Readiness</li><li>Data Governance for AI</li><li>Metadata for ML</li>
+              <li>RAG-ready Data</li><li>LLM / GenAI Awareness</li><li>Data Catalogs &amp; Lineage</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Data Governance</h3>
+            <ul class="chips">
+              <li>Data Quality</li><li>Data Ownership</li><li>Metadata Standards</li>
+              <li>Tagging Strategy</li><li>Governance Frameworks</li><li>Lifecycle Management</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Tools &amp; Platforms</h3>
+            <ul class="chips">
+              <li>Snowflake</li><li>DataHub</li><li>dbt</li><li>Streamlit</li><li>Git / CI-CD</li><li>JIRA</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Analytics &amp; Languages</h3>
+            <ul class="chips">
+              <li>SQL</li><li>Python</li><li>Power BI</li><li>API Analysis</li><li>Excel</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Ways of Working</h3>
+            <ul class="chips">
+              <li>Business Analysis</li><li>Stakeholder Management</li><li>Agile Delivery</li><li>Process Improvement</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Domain</h3>
+            <ul class="chips">
+              <li>Energy / Oil &amp; Gas</li><li>Regulatory Reporting</li><li>M&amp;A Intelligence</li><li>Enterprise Data Platforms</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Currently exploring: signals a growth mindset. Edit the items freely. -->
+        <div class="exploring">
+          <span class="exploring__label">⚡ Currently exploring</span>
+          <ul class="exploring__items">
+            <li>Governance patterns for RAG &amp; LLM data pipelines</li>
+            <li>Data contracts &amp; automated quality checks</li>
+            <li>AI-assisted metadata &amp; cataloging</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights -->
+    <section class="section" id="highlights">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">05</span> Highlights</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>AI-Ready Metadata Foundation</h3>
+            <p>Designed an enterprise tag governance framework across Snowflake and DataHub — standardising how data is classified, owned, and documented so it's trustworthy enough to power AI, ML, and self-service analytics.</p>
+            <ul class="card__tags"><li>Snowflake</li><li>DataHub</li><li>Metadata</li><li>AI Readiness</li></ul>
+          </article>
+          <article class="card">
+            <h3>Real-Time Governance Dashboard</h3>
+            <p>Built a Streamlit app in Snowflake that surfaces tagging compliance in real time across a 5,600+ object estate, driving 95%+ domain-tag coverage with 107 of 118 schemas fully tagged.</p>
+            <ul class="card__tags"><li>Streamlit</li><li>Python</li><li>Snowflake</li></ul>
+          </article>
+          <article class="card">
+            <h3>Governance as Code</h3>
+            <p>Embedded governance controls into dbt pipelines and Infrastructure-as-Code so data quality and documentation standards are enforced automatically at deploy time — not bolted on later.</p>
+            <ul class="card__tags"><li>dbt</li><li>CI/CD</li><li>IaC</li></ul>
+          </article>
+          <article class="card">
+            <h3>Metadata API Investigation</h3>
+            <p>Explored DataHub's APIs to evaluate programmatic access to metadata and lineage, scoping how automation and AI-assisted tooling could reduce manual governance effort.</p>
+            <ul class="card__tags"><li>APIs</li><li>Automation</li><li>Lineage</li></ul>
+          </article>
+          <article class="card">
+            <h3>Reporting Automation</h3>
+            <p>Automated Excel-based reporting and consolidation, saving 20+ hours of manual effort every month while improving accuracy and consistency across regulatory filings.</p>
+            <ul class="card__tags"><li>Python</li><li>SQL</li><li>Process Improvement</li></ul>
+          </article>
+          <article class="card">
+            <h3>Analytics for Decision-Making</h3>
+            <p>Delivered interactive Power BI dashboards and reusable SQL across 10+ recurring clients, turning raw operational data into KPIs stakeholders act on in real time.</p>
+            <ul class="card__tags"><li>Power BI</li><li>SQL</li><li>Analytics</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section section--alt" id="education">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">06</span> Education &amp; Certification</h2>
+        <div class="edu">
+          <div class="edu__item">
+            <h3>Bachelor of Computer Application</h3>
+            <span class="edu__meta">Indira Gandhi National Open University · New Delhi</span>
+            <span class="edu__meta">Graduated June 2018</span>
+          </div>
+          <div class="edu__item">
+            <h3>Technical Product Management</h3>
+            <span class="edu__meta">LinkedIn Learning · Certification</span>
+            <!--
+              Verification link is ACTIVE. Replace the href below with your real certificate URL
+              (open the cert on LinkedIn Learning and copy its share link). To hide this link,
+              wrap it back in comment markers or delete it.
+            -->
+            <a class="verify-link" href="PASTE_CERTIFICATE_URL_HERE" target="_blank" rel="noopener">
+              Verify credential ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">07</span> What people say</h2>
+        <!--
+          Social proof. Add a line from a manager, colleague, or stakeholder — even one short
+          quote with a real name and title carries weight. Copy a <blockquote> block for more.
+          If you don't have one yet, you can hide this whole <section> by wrapping it in
+          comment markers until you collect a quote.
+        -->
+        <div class="quotes">
+          <blockquote class="quote">
+            <p>"[ADD a short quote from a manager or colleague about your governance work and impact.]"</p>
+            <footer><strong>[Name]</strong> · [Title], [Company]</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p>"[ADD a second quote — e.g. about collaboration, delivery, or a specific win.]"</p>
+            <footer><strong>[Name]</strong> · [Title], [Company]</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--alt" id="contact">
+      <div class="container contact">
+        <h2 class="section__title"><span class="section__num">08</span> Get in touch</h2>
+        <p class="contact__lead">
+          Open to roles in data governance, AI data readiness, and metadata management — helping
+          teams build the trustworthy data foundation that AI and analytics depend on. The fastest
+          way to reach me is email or LinkedIn.
+        </p>
+        <div class="contact__links">
+          <a class="btn btn--primary" href="mailto:shivam.jaiswal334@gmail.com">✉ Email me</a>
+          <a class="btn btn--ghost" href="https://www.linkedin.com/in/shivam-j-78a992192/" target="_blank" rel="noopener">in LinkedIn</a>
+          <a class="btn btn--ghost" href="tel:+918851780751">☎ +91 88517 80751</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> Shivam Jaiswal</span>
+      <span>Built as a static site · Hosted on GitHub Pages</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
